@@ -121,3 +121,52 @@ Check out the project live at https://talentmapper-7jnxsrgvtf5hydg8dgz7e9.stream
     <text x="340" y="854" text-anchor="middle" dominant-baseline="central" style="fill:rgb(59, 109, 17);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:central">CSV · AWS S3 · Google Drive · Streamlit dashboard</text>
   </g>
 
+
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technologies |
+|---|---|
+| Language | Python 3.11 |
+| AI / LLM | GPT-4o, Gemini 2.5 Pro, MiniLM-L6-v2, BERT |
+| Classification | 78-pattern email scorer + 52-pattern URL classifier |
+| Knowledge Graph | NetworkX + Neo4j + Supabase pgvector |
+| NLP | spaCy NER, LangChain, LoRA/PEFT fine-tuning |
+| Web Crawling | Playwright, Selenium, Crawl4AI, BeautifulSoup |
+| Frontend | Streamlit — search, results, analytics dashboard |
+| Deployment | Streamlit Cloud, GitHub Actions |
+
+---
+
+## ✨ Features
+
+- **Natural language search** — type "cafe jobs in Chicago" or "pet groomer in Austin"
+- **Radius filtering** — search within 1, 5, 10, or 25 miles
+- **Skill matching** — select your skills, get a match % for every business
+- **HR signal detection** — classifies emails as HR, Sales, or Ambiguous with confidence scores
+- **Career page detection** — identifies hiring pages and external ATS systems
+- **GraphRAG knowledge graph** — connects businesses, skills, emails, and hiring signals
+- **Analytics dashboard** — aggregate metrics, charts, and signal distribution across all searches
+
+---
+
+## 🚀 Run Locally
+
+```bash
+git clone https://github.com/Kaanishkaa/talentmapper.git
+cd talentmapper
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+App runs in demo mode by default — all APIs mocked with realistic data. To use live APIs, copy `.env.example` to `.env` and add your keys.
+
+---
+
+
+
+---
+
+*Built by [Kanishka Ghodke](https://linkedin.com/in/kanishka-ghodke)*
